@@ -1,0 +1,274 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f9e79f; /* Paper Mario-themed background */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    position: relative;
+}
+header h1 {
+    font-size: 2em;
+    color: #d35400;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+/* Mario Running Image */
+.mario-run {
+    width: 80px; 
+    height: auto;
+}
+/* Animation for Mario */
+@keyframes run-cycle {
+    from { transform: translateX(0); }
+    to { transform: translateX(10px); }
+}
+
+/* Video Section - Responsive Grid */
+.video-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    max-width: 560px;
+    border-radius: 10px;
+}
+
+.text-content {
+    max-width: 600px;
+    text-align: left;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+/* Timeline */
+.timeline {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 3px solid #d35400;
+}
+
+.timeline h2 {
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    color: #d35400;
+}
+
+/* Timeline Container - Responsive Grid */
+.timeline-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+}
+
+/* Companion Styles */
+.companion {
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.companion img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #d35400;
+    transition: transform 0.3s ease-in-out;
+}
+
+.companion:hover img {
+    transform: scale(1.2);
+}
+
+/* Tooltip */
+.tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    white-space: nowrap;
+    display: none;
+}
+/* Analysis Section */
+.analysis {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.analysis h2 {
+    font-size: 2em;
+    color: #d35400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.analysis-content {
+    margin-bottom: 20px;
+}
+
+.analysis-content h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.analysis-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.closing-thoughts {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 30px;
+}
+
+/* Bonus Video Section */
+.bonus-video {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fef5e7; /* Light Paper Mario-inspired color */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.bonus-video h2 {
+    font-size: 1.8em;
+    color: #d35400;
+    margin-bottom: 15px;
+}
+
+/* Vivian Banner */
+.vivian-banner {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.vivian-banner img {
+    width: 100%;
+    max-width: 400px; /* Adjust banner size */
+    border-radius: 10px;
+}
+
+/* Ensure video is responsive */
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    max-width: 560px;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+        header {
+        flex-direction: column;
+    }
+    .timeline-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .companion {
+        width: 100%;
+        max-width: 200px; /* Optional: Limit width for large screens */
+    }
+    .mario-run {
+        margin-top: 10px;
+    }
+    .video-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }    
+    .text-content {
+        text-align: center;
+        font-size: 1em;
+        padding: 15px;
+    }
+    .analysis {
+        padding: 15px;
+    }
+
+    .analysis h2 {
+        font-size: 1.8em;
+    }
+
+    .analysis-content h3 {
+        font-size: 1.3em;
+    }
+
+    .analysis-content p {
+        font-size: 1em;
+    }
+
+    .closing-thoughts {
+        font-size: 1.1em;
+    }
+        .bonus-video h2 {
+        font-size: 1.5em;
+    }
+
+    .vivian-banner img {
+        max-width: 300px;
+    }
+}
+
+/* Responsive Design */
+
+
+@media (max-width: 480px) {
+    .text-content {
+        font-size: 1em;
+    }
+
+    .timeline-container {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+
+    .companion img {
+        width: 40px;
+        height: 40px;
+    }
+
+}
